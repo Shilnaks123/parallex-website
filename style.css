@@ -1,0 +1,208 @@
+.navbar{
+    width: 100%;
+    color: rgb(27, 27, 20);
+    background-color: rgb(119, 123, 108);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.navbar .container{
+    max-width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    margin-top: 10px;
+}
+nav ul li{
+    list-style: none;    
+}
+.list-item:hover{
+background-color: beige;
+}
+nav ul li a{
+    color: rgb(83, 74, 74);
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0px 10px;    
+}
+
+.navbar .button a{
+    background-color: azure;
+    color: aqua;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.navbar .button a:hover{
+    background-color: brown;
+}
+
+body , html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+.pimg1, .pimg2, .pimg3{
+    width: 100%;
+    position: relative;
+    opacity:0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+  
+     /*
+     fixed = paralax 
+     scroll= normal 
+     */
+background-attachment: fixed;
+
+}
+
+.pimg1{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE93MOaLX3cavG0H2GaDFPr7XYSSqc7YOQAw&usqp=CAU");
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFi32vb5ixI8zsv48ANUO0KsMKN4ikG9E1Xw&usqp=CAU");
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuEu-ot90VnMDLmI6XrpmvGSb_2L9m17X0zBJt3B45iZXtv8KevLM49F3kBLLGth2iqxg&usqp=CAU");
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+.ptext.border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+} 
+
+.ptext.border.trans{
+    background-color: transparent;
+}
+
+.pimg1, .pimg2, .pimg3{
+    width: 100%;
+    position: relative;
+    opacity:0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+footer{
+    
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+
+}
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialicons a i{
+   font-size: 2em;
+   color: black;
+   opacity: 0.9;
+}
+
+/* Hover Effects on Social Media Icond */
+
+.socialicons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialicons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center
+}
+.footerNav ul li a{
+    color: black;
+     margin: 20px;
+     text-decoration: none;
+     font-size: 1.3em;
+     opacity: 0.7;
+     transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color:#000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+
+}
+.Designer{
+ opacity: 0.7;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ font-weight: 499;
+ margin: 0px 5px;
+}
+   
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment:scroll;
+    }
+}
